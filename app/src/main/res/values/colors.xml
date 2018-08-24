@@ -7,4 +7,5 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
+    <color name="text_color">#ff7b00</color>
 </resources>
