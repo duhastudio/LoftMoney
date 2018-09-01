@@ -28,10 +28,10 @@ public class AddActivity extends AppCompatActivity {
 
         nameInput.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+            public void beforeTextChanged(CharSequence s, int i, int i1, int i2) { }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) { }
 
             @Override
             public void afterTextChanged(Editable editable) {
@@ -40,14 +40,14 @@ public class AddActivity extends AppCompatActivity {
         });
         priceInput.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+            public void beforeTextChanged(CharSequence s, int i, int i1, int i2) { }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) { }
 
             @Override
-            public void afterTextChanged(Editable s) {
-                addBtn.setEnabled(!TextUtils.isEmpty(s));
+            public void afterTextChanged(Editable editable) {
+                addBtn.setEnabled(!TextUtils.isEmpty(editable));
             }
         });
     }
